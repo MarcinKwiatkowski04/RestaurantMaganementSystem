@@ -1,0 +1,27 @@
+﻿<Window x:Class="Pizzeria.AdministrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pizzeria"
+        mc:Ignorable="d"
+        Title="Administracja" Height="450" Width="800"
+        WindowState="Maximized"
+    WindowStyle="None">
+    <Grid Background="#FFFF4D14">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*" Name="WorkersRow"/>
+            <RowDefinition Height="1*" Name="WorkersEditingRow"/>
+            
+            <!--<RowDefinition Height="2*" Name="PaymentRow"/>-->
+            <RowDefinition Height="2*" Name="BudgetRow"/>            
+            <RowDefinition Height="1*" Name="bottomRow"/>
+        </Grid.RowDefinitions>
+        <DataGrid Name="WorkersDataGrid" Grid.Row="0" FontFamily="Verdana" Background="#FFFF4602" />
+
+        <Label Content="AKTUALNY BUDŻET: " Grid.Row="2" HorizontalAlignment="Left" Margin="50,20,50,20" FontSize="20" Name="budgetLabel" Background="White" FontFamily="Verdana"/>           
+        <Button Name="issuePayrollsButton" Grid.Row =" 2" Content="WYŚLIJ WYPŁATY" Margin="50,20,50,20"  HorizontalAlignment="Right" Click="issuePayrollsButton_Click" Background="White" FontFamily="Verdana"/>
+
+        <Button Name="BackButton" Content="WRÓĆ" Grid.Row="4" Click="BackButton_Click" Background="White" FontFamily="Verdana"/>
+    </Grid>
+</Window>

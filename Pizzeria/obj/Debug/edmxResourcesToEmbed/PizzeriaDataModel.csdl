@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PizzeriaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Pizze">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Nazwa" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Cena" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Skladnik1id" Type="Int32" Nullable="false" />
+    <Property Name="Skladnik2id" Type="Int32" />
+    <Property Name="Skladnik3id" Type="Int32" />
+    <Property Name="Skladnik4id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Skladniki">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Nazwa" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Cena" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Ilosc" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="PizzeriaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Pizze" EntityType="Self.Pizze" />
+    <EntitySet Name="Skladniki" EntityType="Self.Skladniki" />
+  </EntityContainer>
+</Schema>

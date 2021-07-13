@@ -1,0 +1,77 @@
+﻿<Window x:Class="Pizzeria.DeliveryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pizzeria"
+        mc:Ignorable="d"
+        Title="Dostawa" Height="450" Width="800"
+        WindowState="Maximized"
+    WindowStyle="None">
+    <Grid Background="#FFFF4616">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*" Name="topRow"/>
+            <RowDefinition Height="2*" Name="labelCity"/>
+            <RowDefinition Height="2*" Name="labelStreet"/>
+            <RowDefinition Height="2*" Name="labelNumber"/>
+            <RowDefinition Height="2*" Name="labelAmount"/>
+            <RowDefinition Height="2*" Name="labelPaymentMethod"/>
+            <RowDefinition Height="2*" Name="labelPizza1"/>
+            <RowDefinition Height="2*" Name="labelPizza2"/>
+            <RowDefinition Height="2*" Name="labelPizza3"/>
+            <RowDefinition Height="2*" Name="labelPizza4"/>
+            <RowDefinition Height="2*" Name="labelPizza5"/>
+            <RowDefinition Height="2*" Name="bottomRow1"/>
+            <RowDefinition Height="2*" Name="bottomRow2"/>
+            <RowDefinition Height="2*" Name="bottomRow3"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="16*" Name="firstOrderColumn" />
+            <ColumnDefinition Width="1*" Name="middleSeparator" />
+            <ColumnDefinition Width="16*" Name="secondOrderColumn" />
+        </Grid.ColumnDefinitions>
+
+        <Label Name="firstOrderLabel" Grid.Row="0" HorizontalAlignment="Center" Grid.Column="0" Content="PIERWSZE ZAMÓWIENIE" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" FontFamily="Verdana" Background="White"/>
+        <Label Name="secondOrderLabel" Grid.Row="0" HorizontalAlignment="Center" Grid.Column="2" Content="DRUGIE ZAMÓWIENIE" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" FontFamily="Verdana" Background="White"/>
+        <Label  Grid.Row="1" HorizontalAlignment="Left" Grid.Column="0" Content="MIASTO:" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana" Background="White"/>
+        <Label Name="city1Label" Grid.Row="1" HorizontalAlignment="CENTER" Grid.Column="0" Content="" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label  Grid.Row="2" HorizontalAlignment="Left" Grid.Column="0" Content="ULICA:" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana" Background="White"/>
+        <Label Name="street1Label" Grid.Row="2" HorizontalAlignment="CENTER" Grid.Column="0" Content="" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label  Grid.Row="3" HorizontalAlignment="Left" Grid.Column="0" Content="NUMER:" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana" Background="White"/>
+        <Label Name="number1Label" Grid.Row="3" HorizontalAlignment="CENTER" Grid.Column="0" Content="" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana" Background="White"/>
+        <Label  Grid.Row="4" HorizontalAlignment="Left" Grid.Column="0" Content="KWOTA:" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana" Background="White"/>
+        <Label Name="amount1Label" Grid.Row="4" HorizontalAlignment="CENTER" Grid.Column="0" Content="" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana" Background="White"/>
+        <Label  Grid.Row="5" HorizontalAlignment="Left" Grid.Column="0" Content="METODA PŁATNOŚCI:" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana" Background="White"/>
+        <Label Name="method1Label" Grid.Row="5" HorizontalAlignment="CENTER" Grid.Column="0" Content="" VerticalAlignment="Top" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="186,2,186,0" FontFamily="Verdana" Background="White"/>
+        <Label  Grid.Row="6" HorizontalAlignment="Left" Grid.Column="0" Content="ZAMÓWIENIE:" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana" Background="White"/>
+        <Label Name="pizza11Label" Grid.Row="6" HorizontalAlignment="CENTER" Grid.Column="0" Content="" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Verdana" Background="White"/>
+        <Label Name="pizza12Label" Grid.Row="7" HorizontalAlignment="CENTER" Grid.Column="0" Content="" VerticalAlignment="Center"  BorderBrush="Black" Margin="2,2,2,2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Verdana"/>
+        <Label Name="pizza13Label" Grid.Row="8" HorizontalAlignment="CENTER" Grid.Column="0" Content="" VerticalAlignment="Center"  BorderBrush="Black" Margin="2,2,2,2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Verdana"/>
+        <Label Name="pizza14Label" Grid.Row="9" HorizontalAlignment="CENTER" Grid.Column="0" Content="" VerticalAlignment="Center"  BorderBrush="Black" Margin="2,2,2,2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Verdana"/>
+        <Label Name="pizza15Label" Grid.Row="10" HorizontalAlignment="CENTER" Grid.Column="0" Content="" VerticalAlignment="Center" BorderBrush="Black" Margin="2,2,2,2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Verdana"/>
+        <Button Name="deliveredDelivery1Button" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="12" Content="DOSTARCZONO ZAMÓWIENIE" Margin="2,2,2,2" Click="deliveredDelivery1Button_Click" FontFamily="Verdana" Background="White" />
+
+
+        <Label  Grid.Row="1" HorizontalAlignment="Left" Grid.Column="2" Content="MIASTO:" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana" Background="White"/>
+        <Label Name="city2Label" Grid.Row="1" HorizontalAlignment="CENTER" Grid.Column="2" Content="" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label  Grid.Row="2" HorizontalAlignment="Left" Grid.Column="2" Content="ULICA:" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana" Background="White"/>
+        <Label Name="street2Label" Grid.Row="2" HorizontalAlignment="CENTER" Grid.Column="2" Content="" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label  Grid.Row="3" HorizontalAlignment="Left" Grid.Column="2" Content="NUMER:" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana" Background="White"/>
+        <Label Name="number2Label" Grid.Row="3" HorizontalAlignment="CENTER" Grid.Column="2" Content="" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana" Background="White"/>
+        <Label Name="amount2Label" Grid.Row="4" HorizontalAlignment="CENTER" Grid.Column="2" Content="" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana" Background="White"/>
+        <Label Name="method2Label" Grid.Row="5" HorizontalAlignment="CENTER" Grid.Column="2" Content="" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana" Background="White"/>
+
+        <Label  Grid.Row="4" HorizontalAlignment="Left" Grid.Column="2" Content="KWOTA:" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana" Background="White" />
+        <Label  Grid.Row="5" HorizontalAlignment="Left" Grid.Column="2" Content="METODA PŁATNOŚCI:" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana" Background="White"/>
+        <Label  Grid.Row="6" HorizontalAlignment="Left" Grid.Column="2" Content="ZAMÓWIENIE:" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana" Background="White"/>
+        <Label Name="pizza21Label" Grid.Row="6" HorizontalAlignment="CENTER" Grid.Column="2" Content="" VerticalAlignment="Center" BorderThickness="1,1,1,1" BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana" Background="White"/>
+        <Label Name="pizza22Label" Grid.Row="7" HorizontalAlignment="CENTER" Grid.Column="2" Content="" VerticalAlignment="Center"  BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana"/>
+        <Label Name="pizza23Label" Grid.Row="8" HorizontalAlignment="CENTER" Grid.Column="2" Content="" VerticalAlignment="Center"  BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana"/>
+        <Label Name="pizza24Label" Grid.Row="9" HorizontalAlignment="CENTER" Grid.Column="2" Content="" VerticalAlignment="Center"  BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana"/>
+        <Label Name="pizza25Label" Grid.Row="10" HorizontalAlignment="CENTER" Grid.Column="2" Content="" VerticalAlignment="Center"  BorderBrush="Black" Margin="2,2,2,2" FontFamily="Verdana"/>
+        <Button Name="deliveredDelivery2Button" HorizontalAlignment="Center" Grid.Column="2" Grid.Row="12" Content="DOSTARCZONO ZAMÓWIENIE" Margin="2,2,2,2" Click="deliveredDelivery2Button_Click" FontFamily="Verdana" Background="White" />
+
+        <Button Name="backDeliveryButton" Grid.Row="13" Grid.ColumnSpan="4" Margin="4,4,4,4" Content="COFNIJ" Click="BackKitchenButton_Click" FontFamily="Verdana" Background="White"/>
+
+    </Grid>
+</Window>

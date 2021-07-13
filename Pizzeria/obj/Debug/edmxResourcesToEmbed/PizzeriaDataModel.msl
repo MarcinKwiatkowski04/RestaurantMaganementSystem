@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PizzeriaModelStoreContainer" CdmEntityContainer="PizzeriaEntities">
+    <EntitySetMapping Name="Pizze">
+      <EntityTypeMapping TypeName="PizzeriaModel.Pizze">
+        <MappingFragment StoreEntitySet="Pizze">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+          <ScalarProperty Name="Cena" ColumnName="Cena" />
+          <ScalarProperty Name="Skladnik1id" ColumnName="Skladnik1id" />
+          <ScalarProperty Name="Skladnik2id" ColumnName="Skladnik2id" />
+          <ScalarProperty Name="Skladnik3id" ColumnName="Skladnik3id" />
+          <ScalarProperty Name="Skladnik4id" ColumnName="Skladnik4id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Skladniki">
+      <EntityTypeMapping TypeName="PizzeriaModel.Skladniki">
+        <MappingFragment StoreEntitySet="Skladniki">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+          <ScalarProperty Name="Cena" ColumnName="Cena" />
+          <ScalarProperty Name="Ilosc" ColumnName="Ilosc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
